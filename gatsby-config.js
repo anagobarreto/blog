@@ -3,11 +3,12 @@ module.exports = {
     title: `Not so awesome blog`,
     author: `Ana Barreto`,
     description: `A starter blog demonstrating what I can do with Gatsby`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    siteUrl: `https://anagobarreto.github.io/blog/`,
     social: {
       twitter: `anagobarreto`,
     },
   },
+  pathPrefix: "/blog",
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -27,6 +28,7 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          `gatsby-remark-emoji`,
           {
             resolve: `gatsby-remark-images`,
             options: {
