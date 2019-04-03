@@ -1,10 +1,3 @@
-/**
- * Bio component that queries for data
- * with Gatsby's StaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/static-query/
- */
-
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Image from "gatsby-image"
@@ -39,12 +32,11 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives in Fremont,
-              California.
+              Written by <strong>{author}</strong>, I live in California.
               {` `}
-              <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow me on Twitter
-              </a>
+              You can follow me on
+              <a href={`https://twitter.com/${social.twitter}`}> Twitter</a>.
+              Check out my <a href="http://anagobarreto.com"> Portfolio</a>.
             </p>
           </div>
         )

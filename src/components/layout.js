@@ -63,8 +63,12 @@ class Layout extends React.Component {
       >
         <header>{header}</header>
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
+        <footer
+          style={{
+            paddingTop: `60px`,
+          }}
+        >
+          © {new Date().getFullYear()}, Built by Ana Barreto with
           {` `}
           <a href="https://www.gatsbyjs.org">Gatsby</a>
         </footer>

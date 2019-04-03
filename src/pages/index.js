@@ -6,6 +6,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 
+require("../styles/stylesheet.css")
+
 class BlogIndex extends React.Component {
   render() {
     const { data } = this.props
@@ -16,7 +18,18 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title="All posts"
-          keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+          keywords={[
+            `blog`,
+            `gatsby`,
+            `javascript`,
+            `react`,
+            `blogger`,
+            `techblog`,
+            `weblog`,
+            `programming`,
+            `web development`,
+            `women in tech`,
+          ]}
         />
         <Bio />
         {posts.map(({ node }) => {

@@ -1,0 +1,11 @@
+body {
+  background-image: linear-gradient(
+    to right,
+    rgba(99, 26, 134, 0.6),
+    rgba(196, 90, 179, 0.6),
+    rgba(162, 102, 111, 0.6),
+    rgba(244, 147, 144, 0.6),
+    rgba(244, 88, 102, 0.6)
+  );
+  text-shadow: 1px 1px rgb(77, 77, 77);
+}
